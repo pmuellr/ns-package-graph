@@ -18,10 +18,12 @@ applications, and their instances.
     for more information, see: https://github.com/pmuellr/ns-package-graph
 
     apps:
+       Dillinger
        nsolid-proxy
        nsolid-console
 
     ids:
+       58ffb5ee98868127902a2fa7bcabb9e643ac2b26  (app: Dillinger)
        2a2fa7bcabb9e643ac2b2658ffb5ee9886812790  (app: nsolid-proxy)
        5eefaa53586d3f9a68aa54a39097d9bcd24d6ca5  (app: nsolid-console)
 
