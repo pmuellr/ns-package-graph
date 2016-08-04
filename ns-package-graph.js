@@ -18,8 +18,10 @@ nsolidCLI.run('info', function (err, infos) {
   let app = process.argv[2]
 
   if (app == null) {
-    console.error('specify either an app name or id as an argument')
-    console.error('')
+    console.log('specify either an app name or id as an argument')
+    console.log('')
+    console.log('for more information, see: https://github.com/pmuellr/ns-package-graph')
+    console.log('')
     printAppsAndIds(infos)
     process.exit(1)
   }
@@ -38,8 +40,8 @@ nsolidCLI.run('info', function (err, infos) {
   }
 
   if (id == null) {
-    console.error(`specified argument is neither an app nor an id: '${app}'`)
-    console.error('')
+    console.log(`specified argument is neither an app nor an id: '${app}'`)
+    console.log('')
     printAppsAndIds(infos)
     process.exit(1)
   }
@@ -121,15 +123,15 @@ function processPackageInfo (app, id, packageInfo) {
 }
 
 function printAppsAndIds (infos) {
-  console.error('apps:')
+  console.log('apps:')
   const apps = new Set(infos.map((info) => info.app))
   for (let app of apps) {
-    console.error(`   ${app}`)
+    console.log(`   ${app}`)
   }
 
-  console.error('')
-  console.error('ids:')
+  console.log('')
+  console.log('ids:')
   for (let info of infos) {
-    console.error(`   ${info.id}  (app: ${info.app})`)
+    console.log(`   ${info.id}  (app: ${info.app})`)
   }
 }

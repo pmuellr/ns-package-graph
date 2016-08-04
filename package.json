@@ -16,6 +16,9 @@
   "scripts": {
     "standard": "standard",
     "build": "standard",
+    "test-run": "./ns-package-graph.js nsolid-console > ~/tmp/nsolid-console.svg",
+    "test-view": "open ~/tmp/nsolid-console.svg",
+    "test": "npm run build && npm run test-run && npm run test-view",
     "watch": "nodemon --exec 'npm run build'"
   },
   "standard": {
