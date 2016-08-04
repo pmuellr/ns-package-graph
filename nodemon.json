@@ -1,0 +1,9 @@
+{
+  "// comment": "config file for nodemon",
+
+  "verbose": false,
+  "ext": "js,json",
+  "ignore": [
+    "tmp"
+  ]
+}

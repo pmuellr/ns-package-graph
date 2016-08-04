@@ -1,0 +1,43 @@
+{
+  "name": "ns-package-graph",
+  "version": "1.0.0",
+  "description": "visualize packages used in an N|Solid runtime",
+  "main": "ns-package-graph",
+  "license": "MIT",
+  "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
+  "keywords": [
+    "N|Solid",
+    "package",
+    "dependencies"
+  ],
+  "bin": {
+    "ns-package-graph": "ns-package-graph.js"
+  },
+  "scripts": {
+    "standard": "standard",
+    "build": "standard",
+    "watch": "nodemon --exec 'npm run build'"
+  },
+  "standard": {
+    "ignore": [
+      "tmp"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmuellr/ns-package-graph.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmuellr/ns-package-graph/issues"
+  },
+  "homepage": "https://github.com/pmuellr/ns-package-graph",
+  "dependencies": {
+    "lodash": "~4.14.1",
+    "viz.js": "~1.3.0",
+    "yargs": "~4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "~1.10.0",
+    "standard": "~7.1.2"
+  }
+}
