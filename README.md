@@ -45,11 +45,21 @@ to convert into SVG, which is then written to stdout.
 
     $ ns-package-graph Dillinger > ~/tmp/Dillinger.svg
 
+The package nodes in the graph output are annotated with color depending on
+duplicate package status.  For duplicate copies of the exact same package name
+and version, those nodes are colored red - they should have been de-duped.  For
+duplicate copies of the exact same package name but different versions, those
+nodes are colored yellow.
+
 For example, here's the output from an old version of [Dillinger][]:
 
 [images/Dillinger.svg](images/Dillinger.svg)
 
-![SVG image of packages in the Dillinger app](images/Dillinger.svg)
+![PNG image of packages in the Dillinger app](images/Dillinger.png)
+
+Clicking on the link to the SVG file above should open the graph in your
+browser, allowing you to zoom in to see the node names / versions.
+
 
 [GraphViz]: http://www.graphviz.org/
 [dot]: http://www.graphviz.org/pdf/dotguide.pdf

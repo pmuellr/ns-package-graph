@@ -2,10 +2,10 @@
 
 'use strict'
 
-const path = require('path')
-
 const viz = require('viz.js')
+
 const nsolidCLI = require('./lib/nsolid-cli')
+const Pkg = require('./lib/pkg')
 
 // Run `nsolid-cli info` to get list of processes
 nsolidCLI.run('info', function (err, infos) {
@@ -18,10 +18,10 @@ nsolidCLI.run('info', function (err, infos) {
   let app = process.argv[2]
 
   if (app == null) {
-    console.log('specify either an app name or id as an argument')
-    console.log('')
-    console.log('for more information, see: https://github.com/pmuellr/ns-package-graph')
-    console.log('')
+    console.error('specify either an app name or id as an argument')
+    console.error('')
+    console.error('for more information, see: https://github.com/pmuellr/ns-package-graph')
+    console.error('')
     printAppsAndIds(infos)
     process.exit(1)
   }
@@ -40,8 +40,8 @@ nsolidCLI.run('info', function (err, infos) {
   }
 
   if (id == null) {
-    console.log(`specified argument is neither an app nor an id: '${app}'`)
-    console.log('')
+    console.error(`specified argument is neither an app nor an id: '${app}'`)
+    console.error('')
     printAppsAndIds(infos)
     process.exit(1)
   }
@@ -65,73 +65,85 @@ function getPackageInfo (app, id) {
 function processPackageInfo (app, id, packageInfo) {
   if (!packageInfo.packages) throw new Error('expecting packages property')
 
-  // get the package directories
-  const pkgDirs = packageInfo.packages.map(function (pkg) { return pkg.path })
+  // create the graph data structure
+  const pkgGraph = Pkg.createGraph(packageInfo.packages)
+  // pkgGraph.dump()
 
-  // create a map of package dir : package, and name/version counts
-  const pkgMap = {}
-  const pkgCount = {}
-  packageInfo.packages.forEach(function (pkg) {
-    pkgMap[pkg.path] = pkg
+  // create a map of package name : copies of that pkg name
+  const pkgCount = new Map()
 
-    const nameVersion = pkg.name + '@' + pkg.version
-    if (pkgCount[nameVersion] == null) {
-      pkgCount[nameVersion] = 1
-    } else {
-      pkgCount[nameVersion]++
-    }
-  })
+  // create a map of package name/version : copies of that pkg name/version
+  const pkgVersCount = new Map()
 
-  // turn all the dependencies into refs to their packages
-  packageInfo.packages.forEach(function (pkg) {
-    pkg.dependencies = pkg.dependencies.map(function (dep) {
-      const depPath = path.resolve(pkg.path, dep)
-      return pkgMap[depPath]
-    })
-  })
+  for (let pkg of pkgGraph.getPackages()) {
+    let count
+
+    // update pkgCount
+    count = pkgCount.get(pkg.name) || 0
+    count++
+    pkgCount.set(pkg.name, count)
+
+    // update pkgVersCount
+    const nameVersion = getPkgVersion(pkg)
+
+    count = pkgVersCount.get(nameVersion) || 0
+    count++
+    pkgVersCount.set(nameVersion, count)
+  }
 
   const dotLines = []
 
   dotLines.push('digraph packages {')
   dotLines.push('node [style=filled];')
 
-  pkgDirs.forEach(function (pkgDir) {
-    const pkg = pkgMap[pkgDir]
-    const count = pkgCount[pkg.name + '@' + pkg.version]
+  for (let pkg of pkgGraph.getPackages()) {
+    const pkgNum = pkgCount.get(pkg.name)
+    const pkgVersNum = pkgVersCount.get(getPkgVersion(pkg))
 
-    if (count > 1) {
+    if (pkgVersNum > 1) {
       dotLines.push('"' + getNodeName(pkg) + '" [color="#FFA0A0"];')
+    } else if (pkgNum > 1) {
+      dotLines.push('"' + getNodeName(pkg) + '" [color="#FFFFA0"];')
     }
 
-    pkg.dependencies.forEach(function (dep) {
+    for (let dep of pkg.deps) {
       dotLines.push('"' + getNodeName(pkg) + '" -> "' + getNodeName(dep) + '";')
-    })
-  })
+    }
+  }
 
   dotLines.push('}')
 
   console.log(viz(dotLines.join('\n')))
 
+  // Return name@version of a package.
+  function getPkgVersion (pkg) {
+    return `${pkg.name}@${pkg.version}`
+  }
+
   // Return a nice node name for a package/version.
   function getNodeName (pkg) {
     const name = pkg.name.replace(/-/g, '-\\n') + '\\n' + pkg.version
-    const count = pkgCount[pkg.name + '@' + pkg.version]
 
-    if (count === 1) return name
-    return name + '\\n' + count + ' copies'
+    const pkgNum = pkgCount.get(pkg.name)
+    const pkgVersNum = pkgVersCount.get(getPkgVersion(pkg))
+
+    const nameBits = [ name ]
+    if (pkgNum > 1) nameBits.push(`\\n${pkgNum} pkg copies`)
+    if (pkgVersNum > 1) nameBits.push(`\\n${pkgVersNum} pkg@vers copies`)
+    return nameBits.join('')
   }
 }
 
 function printAppsAndIds (infos) {
-  console.log('apps:')
+  console.error('apps:')
   const apps = new Set(infos.map((info) => info.app))
   for (let app of apps) {
-    console.log(`   ${app}`)
+    console.error(`   ${app}`)
   }
 
-  console.log('')
-  console.log('ids:')
+  console.error('')
+  console.error('ids:')
   for (let info of infos) {
-    console.log(`   ${info.id}  (app: ${info.app})`)
+    console.error(`   ${info.id}  (app: ${info.app})`)
   }
 }
