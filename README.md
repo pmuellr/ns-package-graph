@@ -53,7 +53,7 @@ nodes are colored yellow.
 
 For example, here's the output from an old version of [Dillinger][]:
 
-[images/Dillinger.svg](images/Dillinger.svg)
+[images/Dillinger.svg](https://pmuellr.github.io/ns-package-graph/images/Dillinger.svg)
 
 ![PNG image of packages in the Dillinger app](images/Dillinger.png)
 
