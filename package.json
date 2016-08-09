@@ -1,6 +1,6 @@
 {
   "name": "ns-package-graph",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "visualize packages used in an N|Solid runtime",
   "main": "ns-package-graph",
   "license": "MIT",
