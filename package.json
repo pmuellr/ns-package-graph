@@ -1,6 +1,6 @@
 {
   "name": "ns-package-graph",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "visualize packages used in an N|Solid runtime",
   "main": "ns-package-graph",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "ns-package-graph": "ns-package-graph.js"
   },
   "scripts": {
+    "wait": "sleep 30",
     "standard": "standard",
     "build": "standard",
     "test-run": "./ns-package-graph.js nsolid-console > ~/tmp/nsolid-console.svg",

@@ -1,0 +1,121 @@
+<style>
+.urlBox {
+  position: fixed;
+  bottom: 0;
+  font-family: monospace;
+  font-size: 150%
+}
+
+.zoomBox {
+  position: fixed;
+}
+
+.zoomBox button {
+  font-size: 200%;
+  font-family: monospace;
+  cursor: move;
+}
+</style>
+
+<script>
+const LSKey = location.pathname + '-view-settings'
+let SvgElement
+
+document.addEventListener("DOMContentLoaded", onLoad)
+window.addEventListener("scroll", onScroll)
+
+// Actions to perform when document loaded.
+function onLoad () {
+  SvgElement = document.querySelectorAll('svg')[0]
+  if (SvgElement == null) return
+
+  const viewSettings = getViewSettings()
+
+  window.scrollX = viewSettings.scrollX
+  window.scrollY = viewSettings.scrollY
+
+  SvgElement.removeAttribute('height')
+  setZoom(viewSettings.zoom)
+}
+
+// Actions to perform on a scroll.
+function onScroll () {
+  saveViewSettings()
+}
+
+// User requested zoom in.
+function zoomIn() {
+  setZoom(1.2 * getZoom())
+}
+
+// User requested zoom out.
+function zoomOut() {
+  setZoom(0.8 * getZoom())
+}
+
+// Return the current zoom setting.
+function getZoom () {
+  if (SvgElement == null) return 100
+
+  const width = SvgElement.getAttribute('width')
+  const match = width.match(/(.*)%/)
+  if (match == null) return 100
+  return parseInt(match[1], 10)
+}
+
+// Set the current zoom setting.
+function setZoom (val) {
+  if (SvgElement == null) return
+
+  SvgElement.setAttribute('width', val + '%')
+
+  saveViewSettings()
+}
+
+// Get the view settings from localStorage.
+function getViewSettings () {
+  let result
+  try {
+    result = JSON.parse(localStorage.getItem(LSKey))
+  } catch (err) {
+    result = null
+  }
+
+  if (result != null) return result
+
+  return {
+    x: 0,
+    y: 0,
+    zoom: 100
+  }
+
+}
+
+let debounceTimeout
+
+// Save the view settings to localStorage.
+function saveViewSettings () {
+  if (debounceTimeout != null) return
+
+  debounceTimeout = setTimeout(persist, 3000)
+
+  function persist () {
+    debounceTimeout = null
+
+    localStorage.setItem(LSKey, JSON.stringify({
+      x: window.scrollX,
+      y: window.scrollY,
+      zoom: getZoom()
+    }))
+  }
+}
+</script>
+
+<div class="zoomBox">
+<button onclick="zoomIn()">+</button>
+<button onclick="zoomOut()">-</button>
+</div>
+
+<div class="urlBox">
+<a href="https://github.com/pmuellr/ns-package-graph">https://github.com/pmuellr/ns-package-graph</a>
+</div>

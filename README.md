@@ -21,7 +21,7 @@ generate a [GraphViz][] [dot][] formatted graph diagram of package dependencies
 in the running program.  That output is then passed to the awesome [Viz.js][]
 library to convert into SVG, which is then written to stdout.
 
-    $ ns-package-graph Dillinger
+    $ ns-package-graph <nsolid app name or instance id>
 
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
@@ -30,7 +30,7 @@ library to convert into SVG, which is then written to stdout.
      -->
     ...
 
-    $ ns-package-graph Dillinger > ~/tmp/Dillinger.svg
+    $ ns-package-graph <nsolid app name or instance id> > packages-graph.svg
 
 The package nodes in the graph output are annotated with color depending on
 duplicate package status.  For duplicate copies of the exact same package name
@@ -38,40 +38,54 @@ and version, those nodes are colored red - they should have been de-duped.  For
 duplicate copies of the exact same package name but different versions, those
 nodes are colored yellow.
 
-For example, here's the output from an old version of [Dillinger][]:
-[Dillinger.svg](https://pmuellr.github.io/ns-package-graph/images/Dillinger.svg)
-or
-[Dillinger.png](https://pmuellr.github.io/ns-package-graph/images/Dillinger.png)
+For example, here's the output from a run of npm version 3, in a few
+different forms:
 
-![PNG image of packages in the Dillinger app](images/Dillinger.png)
+* [npm-3.dot](https://pmuellr.github.io/ns-package-graph/images/npm-3.dot.txt)
+* [npm-3.svg](https://pmuellr.github.io/ns-package-graph/images/npm-3.svg)
+* [npm-3.html](https://pmuellr.github.io/ns-package-graph/images/npm-3.html)
+* [npm-3.png](https://pmuellr.github.io/ns-package-graph/images/npm-3.png)
+  (generated with the GraphViz `dot` command line tool)
 
-_Note that the packages for Dillinger were installed using npm version 2.
-Using npm version 3 provides better de-duping support than version 2._
+![PNG image of packages used npm](images/npm-3.png)
 
 Clicking on the link to the SVG file above should open the graph in your
-browser, allowing you to zoom in to see the node names / versions.
+browser, allowing you to zoom in to see the node names / versions.  The HTML
+file provides a nicer experience in a browser.
+
+When displaying the SVG file in a browser, either directly, or indirectly via the generated HTML file, the following goodies are available:
+
+* tooltips over nodes and edges
+* each package node is a link to it's page at `npmjs.org` - just click the node to view
 
 To generate the image in a format other than SVG, use the `--format dot`
 option, and then use a [Graphviz][] tool to convert to the format of your
 choice.  Eg:
 
-    $ ns-package-graph --format dot Dillinger > Dillinger.dot
-    $ dot -T png -O Dillinger.dot   # generates Dillinger.dot.png
+    $ ns-package-graph --format dot MyApp > MyApp-packages.dot
+    $ dot -T png -O MyApp-packages.dot   # generates MyApp-packages.dot.png
 
 [GraphViz]: http://www.graphviz.org/
 [dot]: http://www.graphviz.org/pdf/dotguide.pdf
 [Viz.js]: http://mdaines.github.io/viz.js/
-[Dillinger]: http://dillinger.io/
 
 
 options
 ================================================================================
 
-    -v --version  print the current version
-    -h --help     print the help text
-    -g --group    one of: "package", "version", "path";  default: "package"
-    -f --format   one of: "svg", "dot", "data-url";      default: "svg"
-    -c --child    one of: "dep", "parent";               default: "dep"
+    -v --version      print the current version
+    -h --help         print the help text
+    -g --group        group by: "package", "version", "path"
+    -f --format       output format: "svg", "dot", "html", "data-url"
+    -c --child        child nodes: "dep", "parent"
+    -s --server PORT  run server on specified port
+
+defaults:
+
+    --group    package
+    --format   svg
+    --child    dep
+    --server   (no default port, must be passed as argument)
 
 The `--group` option changes the grouping of the nodes to show:
 
@@ -85,12 +99,33 @@ The `--format` option determines the output:
 
 * `dot` - generate the Graphviz dot file
 * `svg` - generate an SVG file from the Graphviz dot file data
+* `html` - generate an HTML file with the embedded SVG and zoom controls
 * `data-url` - generate a data URL for the SVG image
 
 The `--child` option determines what children nodes are:
 
 * `dep` - children are the dependencies of the package
 * `parent` - children are packages that depend on the package
+
+The `--server` option runs the program as an HTTP server.  You must pass a port
+number to bind the HTTP server to.  The server responds to URIs of N|Solid
+instance ids or application names, by generating a graph diagram of the packages
+in the process.  The other options apply, so you'll probably want to use
+the `--format html` option for a nicer experience.
+
+A bookmarklet is available to create and view the graph diagram, when invoked
+from the N|Solid Console pages. To create the bookmarklet, create a new bookmark
+for this page, and then edit it to set the name to `ns-package-graph` (or
+whatever you want), and set the URL to the text below. Customize the URL inside
+the bookmarket URL (ie, `http://example.com:4000`) to be the root URL of your
+ns-package-graph server. Then when you're on an N|Solid Console page which shows
+a single app or process, you can click the bookmark and see the package diagram.
+
+bookmarklet URL:
+
+```
+javascript:s='http://example.com:4000';h=location.href;m=h.match(/.*\/app\/.*\?processid=(.*)/)||h.match(/.*\/app\/.*\/process\/(.*)/)||h.match(/.*\/app\/(.*)/);if(m!=null)open(s+'/'+m[1],'_blank')
+```
 
 
 install
