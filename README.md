@@ -144,6 +144,37 @@ For more information on installing N|Solid, see:
 * https://docs.nodesource.com/nsolid/1.4/docs/quickstart
 
 
+additional samples
+================================================================================
+
+Two simple sample applications are included in the package:
+
+* [sample_1](samples/sample_1) - app that uses `async` and `lodash`
+* [sample_2](samples/sample_2) - app that uses `request` and `express`
+
+Here are the outputs of running `ns-package-graph` on the running samples:
+
+`sample_1`:
+
+* [`sample_1.html`](https://pmuellr.github.io/ns-package-graph/samples/sample_1/sample_1.html)
+* [`sample_1.svg`](https://pmuellr.github.io/ns-package-graph/samples/sample_1/sample_1.svg)
+* [`sample_1.dot`](https://pmuellr.github.io/ns-package-graph/samples/sample_1/sample_1.dot.txt)
+* [`sample_1.png`](https://pmuellr.github.io/ns-package-graph/samples/sample_1/sample_1.png)
+
+`sample_2`:
+
+* [`sample_2.html`](https://pmuellr.github.io/ns-package-graph/samples/sample_2/sample_2.html)
+* [`sample_2.svg`](https://pmuellr.github.io/ns-package-graph/samples/sample_2/sample_2.svg)
+* [`sample_2.dot`](https://pmuellr.github.io/ns-package-graph/samples/sample_2/sample_2.dot.txt)
+* [`sample_2.png`](https://pmuellr.github.io/ns-package-graph/samples/sample_2/sample_2.png)
+
+The `.png` files were created using the GraphViz `dot` command.
+
+Note that `sample_2` used `npm` version 2 to `npm install` it's dependencies,
+because that results in duplicated packages.  When using `npm` version 3,
+there aren't any duplicated packages.
+
+
 trouble shooting
 ================================================================================
 
