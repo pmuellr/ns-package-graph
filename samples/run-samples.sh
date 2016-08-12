@@ -26,11 +26,13 @@ node ../ns-package-graph sample_1 -f dot   > sample_1/sample_1.dot
 node ../ns-package-graph sample_1 -f svg   > sample_1/sample_1.svg
 node ../ns-package-graph sample_1 -f html  > sample_1/sample_1.html
 dot sample_1/sample_1.dot -T png          -o sample_1/sample_1.png
+cp sample_1/sample_1.dot sample_1/sample_1.dot.txt
 
 node ../ns-package-graph sample_2 -f dot   > sample_2/sample_2.dot
 node ../ns-package-graph sample_2 -f svg   > sample_2/sample_2.svg
 node ../ns-package-graph sample_2 -f html  > sample_2/sample_2.html
 dot sample_2/sample_2.dot -T png          -o sample_2/sample_2.png
+cp sample_2/sample_2.dot sample_2/sample_2.dot.txt
 
 echo "killing samples"
 kill $PID_1
