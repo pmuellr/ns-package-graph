@@ -1,0 +1,29 @@
+{
+  "packages": [
+    {
+      "path": "/path/to/sample_1",
+      "name": "sample_1",
+      "version": "1.0.0",
+      "dependencies": [
+        "node_modules/async",
+        "node_modules/lodash"
+      ]
+    },
+    {
+      "path": "/path/to/sample_1/node_modules/async",
+      "name": "async",
+      "main": "dist/async.js",
+      "version": "2.0.1",
+      "dependencies": [
+        "../lodash"
+      ]
+    },
+    {
+      "path": "/path/to/sample_1/node_modules/lodash",
+      "name": "lodash",
+      "main": "lodash.js",
+      "version": "4.14.2",
+      "dependencies": []
+    }
+  ]
+}

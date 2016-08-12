@@ -1,0 +1,1631 @@
+{
+  "packages": [
+    {
+      "path": "/path/to/sample_2",
+      "name": "sample_1",
+      "version": "1.0.0",
+      "dependencies": [
+        "node_modules/express",
+        "node_modules/request"
+      ],
+      "modules": []
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/accepts",
+      "name": "accepts",
+      "version": "1.3.3",
+      "dependencies": [
+        "../mime-types",
+        "../negotiator"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "b76d1c3b6af5515dca0b36ed0ef87b248d9acc94"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/array-flatten",
+      "name": "array-flatten",
+      "main": "array-flatten.js",
+      "version": "1.1.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "array-flatten.js",
+          "shasum": "fc6cc30e8b8ec09eeba62bac076ed627aa3ee8d1"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/asn1",
+      "name": "asn1",
+      "main": "lib/index.js",
+      "version": "0.2.3",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/ber/errors.js",
+          "shasum": "556bbb1b810ede9292493a70ad9a8644e5c4fb7a"
+        },
+        {
+          "path": "lib/ber/index.js",
+          "shasum": "1ab39535ed24903d0f9e2a4bf74333702842080b"
+        },
+        {
+          "path": "lib/ber/reader.js",
+          "shasum": "3cfcdc9225bb43dd8413dc3f1f05d4fcd32d0b30"
+        },
+        {
+          "path": "lib/ber/types.js",
+          "shasum": "8a41886747dc1f7cde7e4e5cb60e1a3b8a4c813c"
+        },
+        {
+          "path": "lib/ber/writer.js",
+          "shasum": "bdad4a0bb12fb5f91b789329fc4e4a45ecf87e64"
+        },
+        {
+          "path": "lib/index.js",
+          "shasum": "cbff145d47fb41eb1262f012a7024e7b0e527d6c"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/assert-plus",
+      "name": "assert-plus",
+      "main": "./assert.js",
+      "version": "0.2.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "assert.js",
+          "shasum": "8f3f85bae8edd30db24882766a5c8c4df8357462"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/async",
+      "name": "async",
+      "main": "lib/async.js",
+      "version": "1.5.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/async.js",
+          "shasum": "a410bed1e8c6a19be68101c293ff66c4961076ae"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/aws-sign2",
+      "name": "aws-sign2",
+      "main": "index.js",
+      "version": "0.6.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "b380be041c204108febb8f32b19431a54aaed4a6"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/aws4",
+      "name": "aws4",
+      "main": "aws4.js",
+      "version": "1.4.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "aws4.js",
+          "shasum": "688b405e13e60ba7add727f82c1ee71cf7c18de8"
+        },
+        {
+          "path": "lru.js",
+          "shasum": "015965230b90e69906f66fca1792c4557336336f"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/bl",
+      "name": "bl",
+      "main": "bl.js",
+      "version": "1.1.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "bl.js",
+          "shasum": "2969db3736e9ec3869daed5cbd16ec8e329987c1"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/boom",
+      "name": "boom",
+      "main": "lib/index.js",
+      "version": "2.10.1",
+      "dependencies": [
+        "../hoek"
+      ],
+      "modules": [
+        {
+          "path": "lib/index.js",
+          "shasum": "a894f6f39fc0bf0f8a82a420d8a2a5018e9dcdbe"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/caseless",
+      "name": "caseless",
+      "main": "index.js",
+      "version": "0.11.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "326fc25f6edec25f7d239314ed6e75259147088a"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/combined-stream",
+      "name": "combined-stream",
+      "main": "./lib/combined_stream",
+      "version": "1.0.5",
+      "dependencies": [
+        "../delayed-stream"
+      ],
+      "modules": [
+        {
+          "path": "lib/combined_stream.js",
+          "shasum": "5d3a85a28a463dc2949fbb974919598e00183d24"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/content-disposition",
+      "name": "content-disposition",
+      "version": "0.5.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "22e7741b01f8735611286ecf2020b9fbbceef6a2"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/content-type",
+      "name": "content-type",
+      "version": "1.0.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "55ab0436ee0bdb42e5f06a9fc06c5d518d0ca5c3"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/cookie",
+      "name": "cookie",
+      "version": "0.3.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "4cbbeb0476e05112962cfa616f4d7d5fa8fcdc85"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/cookie-signature",
+      "name": "cookie-signature",
+      "main": "index",
+      "version": "1.0.6",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "bb5c2c0a463aa10074caf991f67681231b1f0c21"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/core-util-is",
+      "name": "core-util-is",
+      "main": "lib/util.js",
+      "version": "1.0.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/util.js",
+          "shasum": "7d34435928ee9228995c04eaa7bdcef875c41e65"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/cryptiles",
+      "name": "cryptiles",
+      "main": "lib/index.js",
+      "version": "2.0.5",
+      "dependencies": [
+        "../boom"
+      ],
+      "modules": [
+        {
+          "path": "lib/index.js",
+          "shasum": "e5c479d1d0966b82298d86669aaa5ed4bcee4fb7"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/debug",
+      "name": "debug",
+      "main": "./node.js",
+      "version": "2.2.0",
+      "dependencies": [
+        "../ms"
+      ],
+      "modules": [
+        {
+          "path": "debug.js",
+          "shasum": "bb692db9f1b4e06986755b168fa71c1bd360edb8"
+        },
+        {
+          "path": "node.js",
+          "shasum": "30354b578cac8fc83d13d2f8b42f19c579255e3d"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/delayed-stream",
+      "name": "delayed-stream",
+      "main": "./lib/delayed_stream",
+      "version": "1.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/delayed_stream.js",
+          "shasum": "097ab12e3837896d11d3f1d2c7a891d177b493c4"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/depd",
+      "name": "depd",
+      "version": "1.1.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "a4081ee8f31a6a9a7cc9add76dfad49e6fd6fd8b"
+        },
+        {
+          "path": "lib/compat/index.js",
+          "shasum": "97cc2573039abced5cadb4c6fcbba077da624115"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/destroy",
+      "name": "destroy",
+      "version": "1.0.4",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "2ac6042ccde68ad7078d65fe8ec08ca9ea68037c"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/ee-first",
+      "name": "ee-first",
+      "version": "1.1.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "6721b521ac3509731d3d0f9b0074908176e1fcc4"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/encodeurl",
+      "name": "encodeurl",
+      "version": "1.0.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "5b4570b42e21816c5f85fbec56af52ceda4c6f64"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/escape-html",
+      "name": "escape-html",
+      "version": "1.0.3",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "dfbb19c79eb0ca7ff2625fb1975a35cf47be378a"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/etag",
+      "name": "etag",
+      "version": "1.7.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "3035ba3c10ffa0cb339d3e49bd5d7a4102bdcc3b"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/express",
+      "name": "express",
+      "version": "4.14.0",
+      "dependencies": [
+        "../accepts",
+        "../array-flatten",
+        "../content-disposition",
+        "../content-type",
+        "../cookie",
+        "../cookie-signature",
+        "../debug",
+        "../depd",
+        "../encodeurl",
+        "../escape-html",
+        "../etag",
+        "../finalhandler",
+        "../fresh",
+        "../merge-descriptors",
+        "../methods",
+        "../on-finished",
+        "../parseurl",
+        "../path-to-regexp",
+        "../proxy-addr",
+        "../qs",
+        "../range-parser",
+        "../send",
+        "../serve-static",
+        "../type-is",
+        "../utils-merge",
+        "../vary"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "3f41478fdab31acabab8fa1d26126483a141ffb6"
+        },
+        {
+          "path": "lib/application.js",
+          "shasum": "ebfe2a8adda9d40c8229cc170c0c8c49bcd7032a"
+        },
+        {
+          "path": "lib/express.js",
+          "shasum": "9999379736d12b5efc0995f75b3379dc4760cdad"
+        },
+        {
+          "path": "lib/middleware/init.js",
+          "shasum": "dc71629d51c1734ca6cd288417daa053d4e489de"
+        },
+        {
+          "path": "lib/middleware/query.js",
+          "shasum": "15a5168053a2a5a3ad234526f383a1f94a569ee2"
+        },
+        {
+          "path": "lib/request.js",
+          "shasum": "76996fd4e80146df06084f69ba01b06b1fce20a2"
+        },
+        {
+          "path": "lib/response.js",
+          "shasum": "b0fb49e493f096dea0aa8575533c8924031f676f"
+        },
+        {
+          "path": "lib/router/index.js",
+          "shasum": "da8ae51201fd31031e26dad4f468272f53edaee5"
+        },
+        {
+          "path": "lib/router/layer.js",
+          "shasum": "27c8fe1d1c09a2699efdc3db1d384d536f6142fb"
+        },
+        {
+          "path": "lib/router/route.js",
+          "shasum": "76517b925237ffdeda27f8aca823edd1acc4b728"
+        },
+        {
+          "path": "lib/utils.js",
+          "shasum": "1119aaeef28bd73be2e4a97c998eefe65fed04f2"
+        },
+        {
+          "path": "lib/view.js",
+          "shasum": "7a49a794f95dadb506726719a21a1e6c19bbe4cf"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/extend",
+      "name": "extend",
+      "main": "index",
+      "version": "3.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "9154a195afa931672ff49f30d5fdf0c5a10614bc"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/extsprintf",
+      "name": "extsprintf",
+      "main": "./lib/extsprintf.js",
+      "version": "1.0.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/extsprintf.js",
+          "shasum": "cfe80b99a5d428a0f357ae11e0a067c46ebdbb2c"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/finalhandler",
+      "name": "finalhandler",
+      "version": "0.5.0",
+      "dependencies": [
+        "../debug",
+        "../escape-html",
+        "../on-finished",
+        "../statuses",
+        "../unpipe"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "4c40896888f74f992e210cde99f1275ac13e03c2"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/forever-agent",
+      "name": "forever-agent",
+      "main": "index.js",
+      "version": "0.6.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "a96917d5912eef5a8ed12a4b1f3a41400eac80d1"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/form-data",
+      "name": "form-data",
+      "main": "./lib/form_data",
+      "version": "1.0.0-rc4",
+      "dependencies": [
+        "../async",
+        "../combined-stream",
+        "../mime-types",
+        "../request"
+      ],
+      "modules": [
+        {
+          "path": "lib/form_data.js",
+          "shasum": "896f6c6fbb1374dbefb85d995431adf8f42c5e3f"
+        },
+        {
+          "path": "lib/populate.js",
+          "shasum": "9dd4fc7be303bc7cba2bc94255d8cfcbde69db9d"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/forwarded",
+      "name": "forwarded",
+      "version": "0.1.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "6a311ae158225be13fc4632d15d1324d01973652"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/fresh",
+      "name": "fresh",
+      "version": "0.3.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "4bc0bbc7e70e0d72b4e2f7d8b25e8f052f3716e7"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/generate-function",
+      "name": "generate-function",
+      "main": "index.js",
+      "version": "2.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "2942e1c63f5a2013a70196110b4859029d09c48d"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/generate-object-property",
+      "name": "generate-object-property",
+      "main": "index.js",
+      "version": "1.2.0",
+      "dependencies": [
+        "../is-property"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "47eacac5534f58609e9f3ccc3a1c5879c20f9add"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/har-validator",
+      "name": "har-validator",
+      "main": "lib/index",
+      "version": "2.0.6",
+      "dependencies": [
+        "../is-my-json-valid",
+        "../pinkie-promise"
+      ],
+      "modules": [
+        {
+          "path": "lib/error.js",
+          "shasum": "e08730fe6ce867fea7b32e8e7c6f9266b7fce592"
+        },
+        {
+          "path": "lib/index.js",
+          "shasum": "099021ac86914964d97afb35a9594e29c136bd0e"
+        },
+        {
+          "path": "lib/runner.js",
+          "shasum": "c0c49bddac013682d52bfff6065cceae67474fb2"
+        },
+        {
+          "path": "lib/schemas/cache.json",
+          "shasum": "24dd76d544e1c3c4be343e1a88e9ffad19705021"
+        },
+        {
+          "path": "lib/schemas/cacheEntry.json",
+          "shasum": "abb6d0b052b7f624f2e9efd5508c0614c4831b36"
+        },
+        {
+          "path": "lib/schemas/content.json",
+          "shasum": "896c9f34e3f38c5687255edcec798bedc98221a0"
+        },
+        {
+          "path": "lib/schemas/cookie.json",
+          "shasum": "fc6b61b7f65667ebd270e2daadfc21e6b6aec452"
+        },
+        {
+          "path": "lib/schemas/creator.json",
+          "shasum": "b0096cca448769435a9a1dfc8835bc560957fa97"
+        },
+        {
+          "path": "lib/schemas/entry.json",
+          "shasum": "161d6c3ab62b4fc423c5aa1d3ee1f67d98c008ca"
+        },
+        {
+          "path": "lib/schemas/har.json",
+          "shasum": "9b5debe33b9aa8c6055bb950ca5f19b1a1d82a42"
+        },
+        {
+          "path": "lib/schemas/index.js",
+          "shasum": "1bab9e9eb0c54be915c5303ee23cba4faaff0194"
+        },
+        {
+          "path": "lib/schemas/log.json",
+          "shasum": "9c72f7600e6fad2818459e76de0140ed9cb67422"
+        },
+        {
+          "path": "lib/schemas/page.json",
+          "shasum": "d3ca0cf8dbcc30f33b91b8e8db85982b01cc5986"
+        },
+        {
+          "path": "lib/schemas/pageTimings.json",
+          "shasum": "2661f2488c8bfaec68b30b4e9dee25089277e448"
+        },
+        {
+          "path": "lib/schemas/postData.json",
+          "shasum": "123d9c6853b0e1a33147e2c04404aa33cf53a1ff"
+        },
+        {
+          "path": "lib/schemas/record.json",
+          "shasum": "23a2f8245bfef93b6b87696af51c1e9d4a0302df"
+        },
+        {
+          "path": "lib/schemas/request.json",
+          "shasum": "ecdaba295ca01aeaa9f3f9779d1c94a051af5578"
+        },
+        {
+          "path": "lib/schemas/response.json",
+          "shasum": "e01a380eeb0b3c87c37f936ebf4888eae55dc3b1"
+        },
+        {
+          "path": "lib/schemas/timings.json",
+          "shasum": "4879ffeb448af68307aa46910bd2d3ac2fde9246"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/hawk",
+      "name": "hawk",
+      "main": "lib/index.js",
+      "version": "3.1.3",
+      "dependencies": [
+        "../boom",
+        "../cryptiles",
+        "../hoek",
+        "../sntp"
+      ],
+      "modules": [
+        {
+          "path": "lib/client.js",
+          "shasum": "781eb260241b46515df2f2f009969a772aa9dbcc"
+        },
+        {
+          "path": "lib/crypto.js",
+          "shasum": "06d65d9f325d49f11a0bf223dc683648f6fac977"
+        },
+        {
+          "path": "lib/index.js",
+          "shasum": "64f1cfdf834d8d679d020071124865b83a6cae72"
+        },
+        {
+          "path": "lib/server.js",
+          "shasum": "ecde371bb849aa221cd138ba993f5fb19fff160e"
+        },
+        {
+          "path": "lib/utils.js",
+          "shasum": "befb760ea6a14654fcce187b2b790f8292b404b2"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/hoek",
+      "name": "hoek",
+      "main": "lib/index.js",
+      "version": "2.16.3",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/escape.js",
+          "shasum": "5ccf43b55ca0fbbc307a91235127af5601bd1187"
+        },
+        {
+          "path": "lib/index.js",
+          "shasum": "cfd3b556015082fc786d83c3e85ade81f448aafb"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/http-errors",
+      "name": "http-errors",
+      "version": "1.5.0",
+      "dependencies": [
+        "../inherits",
+        "../setprototypeof",
+        "../statuses"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "c0113625e57e72370d6e04962b844656ab2f6d5d"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/http-signature",
+      "name": "http-signature",
+      "main": "lib/index.js",
+      "version": "1.1.1",
+      "dependencies": [
+        "../assert-plus",
+        "../jsprim",
+        "../node-uuid",
+        "../sshpk"
+      ],
+      "modules": [
+        {
+          "path": "lib/index.js",
+          "shasum": "996c8efa1d7896034c980e498bec866824662d52"
+        },
+        {
+          "path": "lib/parser.js",
+          "shasum": "c47fbe5cb6f1be3c5a5d62f9085273f3403ff401"
+        },
+        {
+          "path": "lib/signer.js",
+          "shasum": "5e312acbe0c57117dad754fa369a36dca4569bbd"
+        },
+        {
+          "path": "lib/utils.js",
+          "shasum": "dce96d033869c424854178ae71991fe39b7c58b5"
+        },
+        {
+          "path": "lib/verify.js",
+          "shasum": "f0603457d003b72d484d608b266566e771644438"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/inherits",
+      "name": "inherits",
+      "main": "./inherits.js",
+      "version": "2.0.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "inherits.js",
+          "shasum": "3146ed5f0e6053ad30398afdbd5a0d6a4133a4cb"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/ipaddr.js",
+      "name": "ipaddr.js",
+      "main": "./lib/ipaddr",
+      "version": "1.1.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/ipaddr.js",
+          "shasum": "3816c623aa8afaa91794b16cfce0b9096be51772"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/is-my-json-valid",
+      "name": "is-my-json-valid",
+      "main": "index.js",
+      "version": "2.13.1",
+      "dependencies": [
+        "../generate-function",
+        "../generate-object-property",
+        "../jsonpointer",
+        "../xtend"
+      ],
+      "modules": [
+        {
+          "path": "formats.js",
+          "shasum": "2d511859d3d654f3bf604a47e13f98e9b1bc305c"
+        },
+        {
+          "path": "index.js",
+          "shasum": "6c62fa78f5375a9db47f9006b883e049ebe700bb"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/is-property",
+      "name": "is-property",
+      "main": "is-property.js",
+      "version": "1.0.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "is-property.js",
+          "shasum": "d09cd64e2bcead412c4d3be1d95f76fe1e315794"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/is-typedarray",
+      "name": "is-typedarray",
+      "main": "index.js",
+      "version": "1.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "b7ff45ac41fdcb4bb75dd771d6cb9bfbd129e56d"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/isarray",
+      "name": "isarray",
+      "main": "index.js",
+      "version": "1.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "5c3d1f3ad38be1bded1ec4e065f9463c9bbe359d"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/isstream",
+      "name": "isstream",
+      "main": "isstream.js",
+      "version": "0.1.2",
+      "dependencies": [
+        "../core-util-is",
+        "../inherits",
+        "../isarray"
+      ],
+      "modules": [
+        {
+          "path": "isstream.js",
+          "shasum": "db3d8708d100bdb66fd33e1eeb6d2b232016934b"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/json-schema",
+      "name": "json-schema",
+      "main": "./lib/validate.js",
+      "version": "0.2.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/validate.js",
+          "shasum": "97195ad80d4a217293a8bc240ee44c0c89a7fe79"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/json-stringify-safe",
+      "name": "json-stringify-safe",
+      "main": "stringify.js",
+      "version": "5.0.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "stringify.js",
+          "shasum": "b36a3a8d0f794fae13dc8e1c93bd4a8cae311bf2"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/jsonpointer",
+      "name": "jsonpointer",
+      "main": "./jsonpointer",
+      "version": "2.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "jsonpointer.js",
+          "shasum": "cd510cab1d95a07efc733965dd2533a3fad50e51"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/jsprim",
+      "name": "jsprim",
+      "main": "./lib/jsprim.js",
+      "version": "1.3.0",
+      "dependencies": [
+        "../extsprintf",
+        "../json-schema",
+        "../verror"
+      ],
+      "modules": [
+        {
+          "path": "lib/jsprim.js",
+          "shasum": "4c80b47c4ea9b0c9997ed3c9bf020d3e05b1b4a9"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/media-typer",
+      "name": "media-typer",
+      "version": "0.3.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "cc79807e8585c09fb195ffb8ca37bbc04dc26708"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/merge-descriptors",
+      "name": "merge-descriptors",
+      "version": "1.0.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "e95cb1c14d70be457eba2ce61b2f4e90a13b21b1"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/methods",
+      "name": "methods",
+      "version": "1.1.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "82eb55245f510e6cbc580f5ced1dc9d64d664d2a"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/mime",
+      "name": "mime",
+      "main": "mime.js",
+      "version": "1.3.4",
+      "dependencies": [
+        "../mime-db"
+      ],
+      "modules": [
+        {
+          "path": "mime.js",
+          "shasum": "a35190073fedc166eedc33a3fb7778c7593627a9"
+        },
+        {
+          "path": "types.json",
+          "shasum": "21650e9027ff7fe87c87202537455f19b5e46e5e"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/mime-db",
+      "name": "mime-db",
+      "version": "1.23.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "db.json",
+          "shasum": "439412370cbfad3a0b40d96dc8c1a058ee1efc97"
+        },
+        {
+          "path": "index.js",
+          "shasum": "31180f8d0ae079b1bee7ee03e77ea5323583eb06"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/mime-types",
+      "name": "mime-types",
+      "version": "2.1.11",
+      "dependencies": [
+        "../mime-db"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "d1983bb9d10cc678f693be62ef05e1b8c2638ef0"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/ms",
+      "name": "ms",
+      "main": "./index",
+      "version": "0.7.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "21867f756553abdaede5397a39c6d55931b353e3"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/negotiator",
+      "name": "negotiator",
+      "version": "0.6.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "7594038d0ceb6c46d231d59032d6b05e957faf5b"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/node-uuid",
+      "name": "node-uuid",
+      "main": "./uuid.js",
+      "version": "1.4.7",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "uuid.js",
+          "shasum": "91f473812e7748b91d6adb32ac704c4f8cdea13a"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/oauth-sign",
+      "name": "oauth-sign",
+      "main": "index.js",
+      "version": "0.8.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "fb3d1f2193e77b18089fad077d3133143811f554"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/on-finished",
+      "name": "on-finished",
+      "version": "2.3.0",
+      "dependencies": [
+        "../ee-first"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "862758f789dbcc4c0ec875f2fb2f5a8ee7e557e0"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/parseurl",
+      "name": "parseurl",
+      "version": "1.3.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "cc084ea48b948f2fd7fc53e469d6d9acb4ebfeb5"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/path-to-regexp",
+      "name": "path-to-regexp",
+      "version": "0.1.7",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "d832b595ede9ef5017a7c1d817689ba20aa1bb1f"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/pinkie-promise",
+      "name": "pinkie-promise",
+      "version": "2.0.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "830ad9dad341dc74b12a7af106c9e97c07e44a02"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/process-nextick-args",
+      "name": "process-nextick-args",
+      "main": "index.js",
+      "version": "1.0.7",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "19704cf1716bd11b5fd95e20a35506b764aa541e"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/proxy-addr",
+      "name": "proxy-addr",
+      "version": "1.1.2",
+      "dependencies": [
+        "../forwarded",
+        "../ipaddr.js"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "2298b1c99ee9d2f86872ad1f1415359783b2e615"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/qs",
+      "name": "qs",
+      "main": "lib/index.js",
+      "version": "6.2.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "lib/index.js",
+          "shasum": "227523195233e42a48c20f75a1ae350c6bcc5b47"
+        },
+        {
+          "path": "lib/parse.js",
+          "shasum": "1a4be1e82bee29948cb53097cc596f38efa6242b"
+        },
+        {
+          "path": "lib/stringify.js",
+          "shasum": "333b167015714924e496db431b2768461d2582f4"
+        },
+        {
+          "path": "lib/utils.js",
+          "shasum": "eb22491a7b63e5529e70c14598184c2ccee97fbe"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/range-parser",
+      "name": "range-parser",
+      "version": "1.2.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "673bc27e3079b0759cb4922a1af0b49b256126f0"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/request",
+      "name": "request",
+      "main": "index.js",
+      "version": "2.74.0",
+      "dependencies": [
+        "../aws-sign2",
+        "../aws4",
+        "../bl",
+        "../caseless",
+        "../combined-stream",
+        "../extend",
+        "../forever-agent",
+        "../form-data",
+        "../har-validator",
+        "../hawk",
+        "../http-signature",
+        "../is-typedarray",
+        "../isstream",
+        "../json-stringify-safe",
+        "../mime-types",
+        "../node-uuid",
+        "../oauth-sign",
+        "../qs",
+        "../stringstream",
+        "../tough-cookie",
+        "../tunnel-agent"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "5c08a0ecdf6ed1375ddb3167bd0cf47304370f46"
+        },
+        {
+          "path": "lib/auth.js",
+          "shasum": "56bdda40a7df68f69c68cd256258017783e70d12"
+        },
+        {
+          "path": "lib/cookies.js",
+          "shasum": "0b2a641d706209af1f92176a507f382e06b44379"
+        },
+        {
+          "path": "lib/getProxyFromURI.js",
+          "shasum": "2e7c16e357f885401208174ad1f341b084965253"
+        },
+        {
+          "path": "lib/har.js",
+          "shasum": "a4b894d836e3bd947a5d8afffec04128bf934fe5"
+        },
+        {
+          "path": "lib/helpers.js",
+          "shasum": "5fb7966b0c3aad3bf2054efc3d0605a32ef7d48b"
+        },
+        {
+          "path": "lib/multipart.js",
+          "shasum": "66acc47cab8b774688502be7752501e4a44d3cda"
+        },
+        {
+          "path": "lib/oauth.js",
+          "shasum": "8663a55221a216cc32d655f83086979ae9e666a9"
+        },
+        {
+          "path": "lib/querystring.js",
+          "shasum": "b78be4d88327f11499fbf86610d0612d803b1ff4"
+        },
+        {
+          "path": "lib/redirect.js",
+          "shasum": "08b710fe22cf8e28b2fecdcaaadb76923361299b"
+        },
+        {
+          "path": "lib/tunnel.js",
+          "shasum": "97336f00dd29c7fdad5550e9ae4daf57d587d034"
+        },
+        {
+          "path": "request.js",
+          "shasum": "0d85f88bd66adbcd962dde32b20a4a021de5d7fb"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/send",
+      "name": "send",
+      "version": "0.14.1",
+      "dependencies": [
+        "../debug",
+        "../depd",
+        "../destroy",
+        "../encodeurl",
+        "../escape-html",
+        "../etag",
+        "../fresh",
+        "../http-errors",
+        "../mime",
+        "../ms",
+        "../on-finished",
+        "../range-parser",
+        "../statuses"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "977496d0ff15e08608a46b2d6301d1d06650384b"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/serve-static",
+      "name": "serve-static",
+      "version": "1.11.1",
+      "dependencies": [
+        "../encodeurl",
+        "../escape-html",
+        "../parseurl",
+        "../send"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "d3dd5cfb6c125619d206c31a302450e900a9f2d3"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/setprototypeof",
+      "name": "setprototypeof",
+      "main": "index.js",
+      "version": "1.0.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "8d06efd643c46b2c964d1b2c3f0b27c5f945cddf"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/sntp",
+      "name": "sntp",
+      "main": "index",
+      "version": "1.0.9",
+      "dependencies": [
+        "../hoek"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "fbc929bb3b85e76c25fc52743d325d9f36fb3643"
+        },
+        {
+          "path": "lib/index.js",
+          "shasum": "eeed7222493e633069fe267f915f7d13b12df094"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/sshpk",
+      "name": "sshpk",
+      "main": "lib/index.js",
+      "version": "1.9.2",
+      "dependencies": [
+        "../asn1",
+        "node_modules/assert-plus"
+      ],
+      "modules": [
+        {
+          "path": "lib/algs.js",
+          "shasum": "95cac832aaaa1d70d2a18bd42559a147dafbf11b"
+        },
+        {
+          "path": "lib/certificate.js",
+          "shasum": "a7ee2dd2d823ba690daec72568713b289d8bb9b1"
+        },
+        {
+          "path": "lib/dhe.js",
+          "shasum": "de6f67e80ebce95a5272c75afcf05ea84ac45b3b"
+        },
+        {
+          "path": "lib/ed-compat.js",
+          "shasum": "a05999a5907f0027ba834b8ee4e819380a5108ea"
+        },
+        {
+          "path": "lib/errors.js",
+          "shasum": "b1492a5f7867af3b22be7135c44764a6e9176d3c"
+        },
+        {
+          "path": "lib/fingerprint.js",
+          "shasum": "c8d3a671de8f36554c65f02d417069ae8fc706ab"
+        },
+        {
+          "path": "lib/formats/auto.js",
+          "shasum": "44019767fd8da9cca9b5d7bb2672146d251f4250"
+        },
+        {
+          "path": "lib/formats/openssh-cert.js",
+          "shasum": "33261822f3d7e5cca5d57d5f9a32e7d451a3e34e"
+        },
+        {
+          "path": "lib/formats/pem.js",
+          "shasum": "c8b757deebd40dbf2c4dc9ea3315b98dcfb3adea"
+        },
+        {
+          "path": "lib/formats/pkcs1.js",
+          "shasum": "c38b86621e2fbf889b493c0a40021e2a5eb9a812"
+        },
+        {
+          "path": "lib/formats/pkcs8.js",
+          "shasum": "53e41ef5cfd8c1638c077ef52e1174689ec9bb62"
+        },
+        {
+          "path": "lib/formats/rfc4253.js",
+          "shasum": "ce8c2994eea00a91b50360e42b7dd81d69256ae0"
+        },
+        {
+          "path": "lib/formats/ssh-private.js",
+          "shasum": "55677a94fe6587a9d0cf189341ef597d7e7af74b"
+        },
+        {
+          "path": "lib/formats/ssh.js",
+          "shasum": "bb5e99a71b2bb69fdb7324a46a32cf2a959d3740"
+        },
+        {
+          "path": "lib/formats/x509-pem.js",
+          "shasum": "3766e5cf45574a710fe2b3db72ab428b7ad22e52"
+        },
+        {
+          "path": "lib/formats/x509.js",
+          "shasum": "9048820664815de3c146f1132636bc6059f2c5a7"
+        },
+        {
+          "path": "lib/identity.js",
+          "shasum": "89d5d5816ad43d36199f0a85b5e18fe015221d42"
+        },
+        {
+          "path": "lib/index.js",
+          "shasum": "1faf8e3e0c1771d6877244794b2bde68a4ab3cdb"
+        },
+        {
+          "path": "lib/key.js",
+          "shasum": "b431b3bcbb007734c8488e095f2dc30c3cbb8074"
+        },
+        {
+          "path": "lib/private-key.js",
+          "shasum": "80fe709755a54c117f2b58ce231f37e255744189"
+        },
+        {
+          "path": "lib/signature.js",
+          "shasum": "2220920ed48ef04f86bf5ab129c3baefbf1ba317"
+        },
+        {
+          "path": "lib/ssh-buffer.js",
+          "shasum": "2054816cb78235b88544615978878386c76ace84"
+        },
+        {
+          "path": "lib/utils.js",
+          "shasum": "6a82418114504436ef3f4c8bbbe652956a68ef74"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/sshpk/node_modules/assert-plus",
+      "name": "assert-plus",
+      "main": "./assert.js",
+      "version": "1.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "assert.js",
+          "shasum": "8103ced007b61b3e45a420607de576faf7e1e0e4"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/statuses",
+      "name": "statuses",
+      "version": "1.3.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "codes.json",
+          "shasum": "e8e5513e64e87ab05367a52e8ac97af0d19bb5a7"
+        },
+        {
+          "path": "index.js",
+          "shasum": "0461d0249fd064afa2a146b2e464ca5cbc8c3aba"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/stringstream",
+      "name": "stringstream",
+      "main": "stringstream.js",
+      "version": "0.0.5",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "stringstream.js",
+          "shasum": "400fe756da898736fe0642a709c7f88e21fda352"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/tough-cookie",
+      "name": "tough-cookie",
+      "main": "./lib/cookie",
+      "version": "2.3.1",
+      "dependencies": [
+        "../async"
+      ],
+      "modules": [
+        {
+          "path": "lib/cookie.js",
+          "shasum": "bccee47eb4f388666a8ee1c9139cbc99fcb75f50"
+        },
+        {
+          "path": "lib/memstore.js",
+          "shasum": "ecd6269063fe718d5b46d4127ff9d12065660a90"
+        },
+        {
+          "path": "lib/pathMatch.js",
+          "shasum": "3d403b8aad536db9e97eef4915eb01ef53405323"
+        },
+        {
+          "path": "lib/permuteDomain.js",
+          "shasum": "700be205b7d0d3b4c4f442b7dc1b3299d47bf55d"
+        },
+        {
+          "path": "lib/pubsuffix.js",
+          "shasum": "56aac14d8b2dcacfe05e3447a6e4bf9dff2fa0d9"
+        },
+        {
+          "path": "lib/store.js",
+          "shasum": "bcce2205e56bb588b4e6cfcd48a34610a5eccf82"
+        },
+        {
+          "path": "package.json",
+          "shasum": "4cdb3fcb6607421a4f6d69b487fb2b05357073d1"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/tunnel-agent",
+      "name": "tunnel-agent",
+      "main": "index.js",
+      "version": "0.4.3",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "e9320bd906e55558d9ba2569f76e92899da8744f"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/type-is",
+      "name": "type-is",
+      "version": "1.6.13",
+      "dependencies": [
+        "../media-typer",
+        "../mime-types"
+      ],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "b91ccf0c325720d4d3478636ca821289fe28c4c0"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/unpipe",
+      "name": "unpipe",
+      "version": "1.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "df9106d2019fe2e4bfae9882e4a8be7012eb55cf"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/util-deprecate",
+      "name": "util-deprecate",
+      "main": "node.js",
+      "version": "1.0.2",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "node.js",
+          "shasum": "26bb9fcabaf57f0bb50e5e026c13de394bc0c478"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/utils-merge",
+      "name": "utils-merge",
+      "main": "./index",
+      "version": "1.0.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "77759a680bd22cacb94bdc438ed6250eeb10e50a"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/vary",
+      "name": "vary",
+      "version": "1.1.0",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "index.js",
+          "shasum": "70d3d3838553e8c90190d62f41360a71554119f9"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/verror",
+      "name": "verror",
+      "main": "./lib/verror.js",
+      "version": "1.3.6",
+      "dependencies": [
+        "../extsprintf"
+      ],
+      "modules": [
+        {
+          "path": "lib/verror.js",
+          "shasum": "def5538e73a39e2d14388970751c55e55f9b06fd"
+        }
+      ]
+    },
+    {
+      "path": "/path/to/sample_2/node_modules/xtend",
+      "name": "xtend",
+      "main": "immutable",
+      "version": "4.0.1",
+      "dependencies": [],
+      "modules": [
+        {
+          "path": "immutable.js",
+          "shasum": "3c1de57f8d038e3ebc9e1ab278fe2f683866079c"
+        }
+      ]
+    }
+  ]
+}
